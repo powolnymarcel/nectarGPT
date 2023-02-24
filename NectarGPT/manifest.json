@@ -1,0 +1,22 @@
+{
+    "name": "Nectar",
+    "description": "Nectar is a conversational AI-powered Chrome extension that lets you interact with an AI chatbot from your browser. Get instant answers to your questions, complete tasks, and have fun! powered by GPT-2",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    },
+    "action": {
+        "default_popup": "frontend/index.html"
+    },
+    "host_permissions": ["https://*.openai.com/"],
+    "background": {
+      "service_worker": "background/index.js"
+    },
+    "chrome_url_overrides": {
+      "newtab": "frontend/index.html"
+    }
+  }

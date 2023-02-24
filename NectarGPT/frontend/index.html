@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta setup -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Title -->
+  <title>Nectar - Your sweetest tab assistant</title>
+  <!-- Fav Icon -->
+  <link rel="icon" href="images/favicon.ico" />
+  <!-- Main StyleSheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .keyword-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .submit- {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- header-area start -->	
+    <header class="header-area">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">
+              <ul>
+                <li><img src="images/logo2.png" class="img-fluid" alt=""></li>
+                <li>Nectarine - Stay productive with Nectar</li>
+              </ul>
+            </a>
+          </div>
+          <div class="x-icon">
+            <a href="#"><img src="images/Shape.png" class="img-fluid" alt="" id="x-icon"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header-area end -->
+
+<!-- Enter your prompt area-start -->
+<section class="keyword-area">
+    <div class="container" id="container">
+      <div class="keyword-potmpt-form">
+        <div action="#">
+          <input type="search" placeholder="Enter your prompt!" id="input-el">
+        </div>
+        <div class="submit-">
+          <button type="submit" id="submit-btn"><img src="images/arrow.png" class="img-fluid" alt=""></button>
+        </div>
+      </div>
+      <div class="key-wrod-inner" id="content-El">
+        <!-- Waiting response prompt -->
+        <div id="waiting-response">
+          <p>Let's get things done! How can I assist you?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Enter your prompt area-end -->  
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>
+
+
+
+
